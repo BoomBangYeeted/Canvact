@@ -1,0 +1,32 @@
+%YAML 1.2
+---
+
+body: 
+  args: []
+  html:
+    - {sect: node, value: "<body>\n"}
+    - {sect: body, value: ""}
+    - {sect: node, value: "\n<body>"}
+  css:
+    - {sect: node, value: "body"}
+    - {sect: node, value:  " {\n "}
+    - {sect: body, value: ""}
+    - {sect: node, value:  "\n}\n"}
+
+header: 
+  args:
+    - {datatype: int, name: "n", flexible: false}
+  html:
+    - {sect: node, value: "<h"}
+    - {sect: param, value: "n"}
+    - {sect: node,  value: ">\n"}
+    - {sect: body, value: ""}
+    - {sect: node, value: "\n</h"}
+    - {sect: param, value: "n"}
+    - {sect: node,  value: ">"}
+  css:
+    - {sect: node, value: "h"}
+    - {sect: param, value: "n"}
+    - {sect: node, value:  " {\n "}
+    - {sect: body, value: ""}
+    - {sect: node, value:  " \n}\n"}

@@ -1,0 +1,13 @@
+rgb:
+  args: 
+    - {datatype: int, name: "r", flexible: true}
+    - {datatype: int, name: "g", flexible: true}
+    - {datatype: int, name: "b", flexible: true}
+  body:
+    - {sect: node, value: "rgb("}
+    - {sect: param, value: "r"}
+    - {sect: node, value: ", "}
+    - {sect: param, value: "g"}
+    - {sect: node, value: ", "}
+    - {sect: param, value: "b"}
+    - {sect: node, value: ")"}
